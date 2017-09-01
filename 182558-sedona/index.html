@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page">
+  <div class="page-container">
+    <header class="page-header">
+      <nav class="page-header-navigation">
+        <ul class="page-header-navigation-list">
+          <li class="page-header-navigation-item">
+            <a href="#">Информация</a>
+          </li>
+          <li>
+            <a href="#">Фото и видео</a>
+          </li>
+          <li>
+            <a href="#">Карта штата</a>
+          </li>
+          <li>
+            <a href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <div class="page-header-index-logo">
+          <a><img src="img/logosedona.png" width="138" height="70" alt="Логотип «City of Cedona»">Логотип города Седона</a>
+        </div>
+      </nav>
+    </header>
+    <main class="page-content">
+      <div class="page-content-main-picture">
+        <img src="img/welcomesedona.png" width="458" height="532" alt="Добро пожаловать в «Седону»">
+      </div>
+      <p class="page-content-tagline text"><b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b></p>
+      <div class="page-content-features-header">
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+      </div>
+      <section class="page-content-features">
+        <div class="page-content-features-item with-photo">
+          <div class="page-content-features-text">
+            <b class="page-content-features-name">Настоящий городок</b>
+            <span class="item-number">— №1 —</span>
+            <p>Cедона — не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <div class="page-content-features-photo">
+            <img class="photo" src="img/usuallife.jpg" width="800" height="256" alt="Фотография города «City of Cedona»">
+          </div>
+        </div>
+        <div class="page-content-features-item item-icon houseIcon">
+          <b class="page-content-features-name">Жилье</b>
+          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
+        <div class="page-content-features-item item-icon burgericon">
+          <b class="page-content-features-name">Еда</b>
+          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+        <div class="page-content-features-item item-icon souvenirIcon">
+          <b class="page-content-features-name">Сувениры</b>
+          <p>Не только китайского, но и местного производства!</p>
+        </div>
+        <div class="page-content-features-item with-photo">
+          <div class="page-content-features-photo">
+            <img class="photo" src="img/devilbridge.jpg" width="800" height="256" alt="Фотография моста дьявола «City of Cedona»">
+          </div>
+          <div class="page-content-features-text big-column">
+            <b class="page-content-features-name">&nbsp; Там есть &nbsp; мост дьявола</b>
+            <span class="item-number">— №2 —</span>
+            <p>Да, по нему можно пройти! если конечно вы осмелитесь</p>
+          </div>
+        </div>
+        <div class="page-content-features-item page-content-features-text">
+          <b class="page-content-features-name">Небольшая площадь</b>
+          <span class="item-number">— №3 —</span>
+          <p>Все достопримечательности находятся очень близко</p>
+        </div>
+        <div class="page-content-features-item page-content-features-text">
+          <b class="page-content-features-name">Красивая дорога</b>
+          <span class="item-number">— №4 —</span>
+          <p>Ехать в Седону из Лас-вегаса совсем не скучно!</p>
+        </div>
+        <div class="page-content-features-item page-content-features-text">
+          <b class="page-content-features-name">Мало туристов</b>
+          <span class="item-number">— №5 —</span>
+          <p>Большинство едет в Гранд каньон и толпится там</p>
+        </div>
+      </section>
+      <div class="page-content-index">
+        <div class="page-content-index-found">
+          <h2 class="page-content-index-title">Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <div class="page-content-index-form-title">
+            <p class="page-content-index-form-btn-open-closed">Поиск гостиницы в Седоне</p>
+            <form class="page-content-index-appointment-form" action="https://echo.htmlacademy.ru" method="post">
+              <label for="coming-date">Дата заезда:</label>
+              <div class="page-content-index-form-date">
+                <input type="text" name="coming-date" id="coming-date" value="24 апреля 2017">
+                <span class="calendar-icon"></span>
+              </div>
+              <label for="exit-date">Дата выезда:</label>
+              <div class="page-content-index-form-date">
+                <input type="text" name="exit-date" id="exit-date" value="4 июля 2017">
+                <span class="calendar-icon"></span>
+              </div>
+              <label for="number-adults">взрослые:</label>
+              <div class="page-content-index-appointment-form-more-less">
+                <button class="page-content-index-form-btn-more-less" type="submit"></button>
+                <input type="text" name="number-adults" id="number-adults" value="2">
+                <button class="page-content-index-form-btn-more-less" type="submit"></button>
+              </div>
+              <label for="number-children">дети:</label>
+              <div class="page-content-index-appointment-form-more-less">
+                <button class="page-content-index-form-btn-more-less" type="submit"></button>
+                <input type="text" name="number-children" id="number-children" value="0">
+                <button class="page-content-index-form-btn-more-less" type="submit"></button>
+              </div>
+              <button class="btn page-content-index-form-btn" type="submit">Найти</button>
+            </form>
+          </div>
+        </div>
+        <div class="page-content-index-map-picture">
+          <div class="yandex-map-show" id="yandex-map"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <section class="page-footer-contacts">
+        #Visitsedona
+      </section>
+      <section class="page-footer-social">
+        <a class="btn social-btn social-btn-tvit" href="#">Твитер</a>
+        <a class="btn social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="btn social-btn social-btn-youtube" href="#">Ютьюб</a>
+      </section>
+      <section class="footer-copyright">
+        <span>Website by</span>
+        <a href="https://htmlacademy.ru" target="_blank">Логотип html Academy</a>
+      </section>
+    </footer>
+  </div>
+  <script src="js/script.min.js"></script>
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=csCsRKkDve572xpzQg-pCWOoyBjTP3KA&amp;width=1200&amp;height=593&id=yandex-map&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+</body>
+
+</html>
