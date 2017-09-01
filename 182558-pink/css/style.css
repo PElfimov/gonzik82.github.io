@@ -2423,6 +2423,7 @@ img {
     line-height: 30px;
     font-weight: 600;
     text-align: center;
+    width: 240px;
   }
   .advantages__item-descr {
     font-size: 18px;
@@ -2430,6 +2431,7 @@ img {
     font-weight: 400;
     text-align: center;
     margin-top: 26px;
+    width: 240px;
   }
   .advantages__bonus-inner {
     padding-bottom: 47px;
