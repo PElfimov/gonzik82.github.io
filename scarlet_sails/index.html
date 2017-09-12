@@ -21,59 +21,62 @@
       <section class="header-contact">
         <p class="header-contact__text">Ждем ваших звонков!</p>
         <p class="header-contact__phonenomber">
-          <a  href="tel:+79293992429">+7 929 399 2429</a>
+          <a href="tel:+79293992429">+7 929 399 2429</a>
         </p>
         <div class="social-btn">
           <p class="social-btn__text-hidden">Пишите нам</p>
           <ul class="social-btn__list">
-            <li class="social-btn__item social-btn__item--ok">
-              <a href="#">Мы в одноклассниках</a>
+            <!-- <li class="social-btn__item social-btn__item--ok">
+              <a href="#" target="_blank">Мы в одноклассниках</a>
             </li>
             <li class="social-btn__item social-btn__item--vk">
-              <a href="#">Мы в контакте</a>
-            </li>
+              <a href="#" target="_blank">Мы в контакте</a>
+            </li> -->
             <li class="social-btn__item social-btn__item--insta">
-              <a href="#">Мы в инстаграмм</a>
+              <a href="https://www.instagram.com/prazdnik.barnaul/" target="_blank"> Мы в инстаграмм</a>
             </li>
-            <li class="social-btn__item social-btn__item--fb">
-              <a href="#">Мы в фейсбук</a>
-            </li>
+            <!-- <li class="social-btn__item social-btn__item--fb">
+              <a href="#" target="_blank">Мы в фейсбук</a>
+            </li> -->
           </ul>
         </div>
       </section>
-      </div>
-      <nav class="main-nav">
-        <p class="main-nav__text-hidden">Главное меню сайта</p>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="#">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Наши шоу</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Отзывы</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Спец предложения</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Сертификаты</a>
-          </li>
-        </ul>
-      </nav>
+    </div>
+    <nav class="main-nav">
+      <p class="main-nav__text-hidden">Главное меню сайта</p>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="#main-page">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#show">Наши шоу</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#reviews">Отзывы</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#offers">Спецпредложения</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#сertificates">Сертификаты</a>
+        </li>
+      </ul>
+    </nav>
 
   </header>
   <main>
-    <section class="capture-page">
-      <div class="capture-page__inner">
+    <section id="main-page" class="capture-page">
+      <div id="wrapper" class="capture-page__inner">
         <h2 class="capture-page__tittle">Организация праздников для детей</h2>
         <p class="capture-page__text">яркие шоу-программы, кветы, мастер-классы и аниматоры
         </p>
         <div class="capture-page__btn">
-          <a class="btn" href="#">Узнать подробнее</a>
-          <a class="btn btn--transparent" href="#">Заказать консультацию</a>
+          <a class="btn" href="#show">Узнать подробнее</a>
+          <a class="btn btn--transparent js-consultation" href="#">Заказать консультацию</a>
         </div>
+      </div>
+      <div class="">
+
       </div>
     </section>
     <section class="why-us-page">
@@ -86,10 +89,10 @@
           <li class="why-us-page__item  why-us-page__item--hit">
             Хит-программы с жидким азотом. Интересно и вкусно!
           </li>
-          <li class="why-us-page__item  why-us-page__item--hit">
-            Все программы проводим лично! <span class="why-us-page__red-texth">Цена от производителя :)</span> без посредников и переплат.
+          <li class="why-us-page__item  why-us-page__item--money">
+            Все программы проводим лично!</br><span class="why-us-page__red-text">Цена от производителя:)</span> без посредников и переплат.
           </li>
-          <li class="why-us-page__item  why-us-page__item--hit">
+          <li class="why-us-page__item  why-us-page__item--altay">
             Работаем по всему алтайскому краю!
           </li>
         </ul>
@@ -100,7 +103,7 @@
         <h2 class="start-party__tytle">
           Начните готовиться к празднику уже сейчас!
         </h2>
-        <a class="btn btn--party" href="#">Оставить заявку</a>
+        <a class="btn btn--party js-order" href="#">Оставить заявку</a>
       </div>
     </section>
     <section class="about-us">
@@ -109,8 +112,6 @@
         <ul class="about-us__lists">
           <li class="about-us__item about-us__item--more-party">
             Более <span class="about-us__number">1700</span> проведенных мероприятий
-          </li>
-          <li class="about-us__item about-us__item--40-hero"><span class="about-us__number">40</span> ярких образов сказочных героев
           </li>
           <li class="about-us__item about-us__item--40-hero"><span class="about-us__number">40</span> ярких образов сказочных героев
           </li>
@@ -138,7 +139,7 @@
         </ul>
       </div>
     </section>
-    <section class="show">
+    <section id="show" class="show">
       <div class="show__inner">
         <h2 class="show__tittle">Наши шоу</h2>
         <ul class="show__list">
@@ -147,85 +148,105 @@
             <div class="show__img">
               <img src="img/krio.jpg" alt="Крио шоу" width=373 height=248>
             </div>
-            <a href="#" class="btn btn--show">Заказать</a>
-            <a href="#" class="btn-show">Подробнее</a>
+            <a href="#" class="btn btn--show show__item-btn show__item-btn js-order">Заказать</a>
+            <div class="show__inem-btn2">
+              <a href="krio.html" class="btn-show">Подробнее</a>
+            </div>
           </li>
           <li class="show__item">
             <p class="show__item-text">Дед мороз и Снегурочка</p>
             <div class="show__img">
               <img src="img/santaclaus.jpg" alt="Дед мороз и Снегурочка" width=373 height=248>
             </div>
-            <a href="#" class="btn btn--show">Заказать</a>
-            <a href="#" class="btn-show">Подробнее</a>
+            <a href="#" class="btn btn--show show__item-btn js-order">Заказать</a>
+            <div class="show__inem-btn2">
+              <a href="santaclaus.html" class="btn-show">Подробнее</a>
+            </div>
           </li>
           <li class="show__item">
             <p class="show__item-text">Шоу молекулярной кухни «Сладкоежка»</p>
             <div class="show__img">
               <img src="img/sweettooth.jpg" alt="Шоу молекулярной кухни «Сладкоежка»" width=373 height=248>
             </div>
-            <a href="#" class="btn btn--show">Заказать</a>
-            <a href="#" class="btn-show">Подробнее</a>
+            <a href="#" class="btn btn--show show__item-btn js-order">Заказать</a>
+            <div class="show__inem-btn2">
+              <a href="sweettooth.html" class="btn-show">Подробнее</a>
+            </div>
           </li>
           <li class="show__item">
             <p class="show__item-text">Поролон шоу</p>
             <div class="show__img">
               <img src="img/foamrubber.jpg" alt="Поролон шоу" width=373 height=248>
             </div>
-            <a href="#" class="btn btn--show">Заказать</a>
-            <a href="#" class="btn-show">Подробнее</a>
+            <a href="#" class="btn btn--show show__item-btn js-order">Заказать</a>
+            <div class="show__inem-btn2">
+              <a href="foamrubber.html" class="btn-show">Подробнее</a>
+            </div>
           </li>
           <li class="show__item">
             <p class="show__item-text">Научное шоу «Повелители природы»</p>
             <div class="show__img">
               <img src="img/mastersnature.jpg" alt="Научное шоу «Повелители природы»" width=373 height=248>
             </div>
-            <a href="#" class="btn btn--show">Заказать</a>
-            <a href="#" class="btn-show">Подробнее</a>
+            <a href="#" class="btn btn--show show__item-btn js-order">Заказать</a>
+            <div class="show__inem-btn2">
+              <a href="mastersnature.html" class="btn-show">Подробнее</a>
+            </div>
           </li>
           <li class="show__item">
             <p class="show__item-text">Шоу гигантских мыльных пузырей</p>
             <div class="show__img">
               <img src="img/bubble.jpg" alt="Шоу гигантских мыльных пузырей" width=373 height=248>
             </div>
-            <a href="#" class="btn btn--show">Заказать</a>
-            <a href="#" class="btn-show">Подробнее</a>
+            <a href="#" class="btn btn--show show__item-btn js-order">Заказать</a>
+            <div class="show__inem-btn2">
+              <a href="bubble.html" class="btn-show">Подробнее</a>
+            </div>
           </li>
           <li class="show__item">
             <p class="show__item-text">Мастер класс по крио-мороженному</p>
             <div class="show__img">
               <img src="img/icecream.jpg" alt="Мастер класс по крио-мороженному" width=373 height=248>
             </div>
-            <a href="#" class="btn btn--show">Заказать</a>
-            <a href="#" class="btn-show">Подробнее</a>
+            <a href="#" class="btn btn--show show__item-btn js-order">Заказать</a>
+            <div class="show__inem-btn2">
+              <a href="icecream.html" class="btn-show">Подробнее</a>
+            </div>
           </li>
           <li class="show__item">
             <p class="show__item-text">Фикси - шоу (научное шоу для самых маленьких)</p>
             <div class="show__img">
               <img src="img/fiksi.jpg" alt="Фикси - шоу (научное шоу для самых маленьких)" width=373 height=248>
             </div>
-            <a href="#" class="btn btn--show">Заказать</a>
-            <a href="#" class="btn-show">Подробнее</a>
+            <a href="#" class="btn btn--show show__item-btn js-order">Заказать</a>
+            <div class="show__inem-btn2">
+              <a href="fiksi.html" class="btn-show">Подробнее</a>
+            </div>
           </li>
           <li class="show__item">
             <p class="show__item-text">Квесты для детей</p>
             <div class="show__img">
               <img src="img/kvest.jpg" alt="Квесты для детей" width=373 height=248>
             </div>
-            <a href="#" class="btn btn--show">Заказать</a>
-            <a href="#" class="btn-show">Подробнее</a>
+            <a href="#" class="btn btn--show show__item-btn js-order">Заказать</a>
+            <div class="show__inem-btn2">
+              <a href="kvest.html" class="btn-show">Подробнее</a>
+            </div>
           </li>
           <li class="show__item">
             <p class="show__item-text">Анимация</p>
             <div class="show__img">
               <img src="img/animation.jpg" alt="Анимация" width=373 height=248>
             </div>
-            <a href="#" class="btn btn--show">Заказать</a>
-            <a href="#" class="btn-show">Подробнее</a>
+            <a href="#" class="btn btn--show show__item-btn js-order">Заказать</a>
+            <div class="show__inem-btn2">
+              <a href="animation.html" class="btn-show">Подробнее</a>
+            </div>
           </li>
         </ul>
       </div>
     </section>
-    <section class="video-reviews">
+    <section id="reviews" class="video-reviews">
       <h2 class="video-reviews__title">Отзывы</h2>
       <div class="video-reviews__inner">
         <button class="btn-reviews btn-reviews--left" type="button"></button>
@@ -233,66 +254,77 @@
           <ul class="video-reviews__list">
             <li class="video-reviews__item ">
               <div class="video-reviews__video">
-
+                <iframe width="465" height="281" src="https://www.youtube.com/embed/LWV5eVx4ymg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </li>
+            <li class="video-reviews__item ">
+              <div class="video-reviews__video">
+                <iframe width="465" height="281" src="https://www.youtube.com/embed/LWV5eVx4ymg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
               </div>
             </li>
           </ul>
         </div>
         <button class="btn-reviews btn-reviews--right" type="button"></button>
       </div>
+      <a href="#" class="btn btn--video-reviews video-reviews__btn js-order">Хочу также</a>
     </section>
     <section class="offers">
       <div class="offers__inner">
-        <h2 class="offers__title">Спецпредложения</h2>
+        <h2 id="offers" class="offers__title">Спецпредложения</h2>
         <ul class="offers__list">
           <li class="offers__item">
-            <h3 class="offers__item-title">Пакет «Зажигай»</h3>
-            <p class="offers__item-text">Продолжительность 2 часа </p>
-            <p class="offers__item-text">Игровая развлекательная программа с 1 Персонажем</p>
-            <p class="offers__item-text">Шоу-программа на выбор:</p>
-            <ul class="offers__item-list">
-              <li>крио-шоу,</li>
-              <li>научное шоу,</li>
-              <li>поролон-шоу (90 кубиков)</li>
-            </ul>
-            <p class="offers__price-old"><span class="offers__text-hidden">Старая цена </span>Итого 5600р.</p>
-            <p class="offers__price-text">спеццена</p>
-            <pclass="offers__price">5000 р.</p>
+            <h3 class="offers__item-title">Пакет</br><span>«Зажигай»</span></h3>
+            <div class="offers__item-wrapper">
+              <p class="offers__item-text">Продолжительность 2 часа </p>
+              <p class="offers__item-text">Игровая развлекательная программа с 1 Персонажем</p>
+              <p class="offers__item-text offers__item-text--list-title">Шоу-программа на выбор:</p>
+              <ul class="offers__item-list">
+                <li>крио-шоу,</li>
+                <li>научное шоу,</li>
+                <li>поролон-шоу (90 кубиков)</li>
+              </ul>
+              <p class="offers__price-old"><span class="offers__text-hidden">Старая цена </span>Итого 5600р.</p>
+              <p class="offers__price-text">спеццена</p>
+              <p class="offers__price">5000 р.</p>
               <p class="offers__price-benefit">выгода 600 р.</p>
-              <a href="#" class="btn btn--offers">Заказать</a>
+              <a href="#" class="btn btn--offers js-order">Заказать</a>
+            </div>
           </li>
           <li class="offers__item offers__item--hit">
-            <h3 class="offers__item-title">Пакет «Зажигай и отрывайся»</h3>
-            <p class="offers__item-text">Продолжительность 3 часа </p>
-            <p class="offers__item-text">Игровая развлекательная программа с 1 Персонажем</p>
-            <p class="offers__item-text">2 шоу-программы на выбор:</p>
-            <ul class="offers__item-list">
-              <li>Крио-шоу/ научное шоу/ поролон-шоу (90 кубиков) </li>
-              <li>Шоу гигантских мыльных пузырей/ Пиратский квест</li>
-            </ul>
-            <p class="offers__price-old"><span class="offers__text-hidden">Старая цена </span>Итого 8400р.</p>
-            <p class="offers__price-text">спеццена</p>
-            <pclass="offers__price">7400 р.</p>
+            <h3 class="offers__item-title">Пакет</br><span>«Зажигай и отрывайся»</span></h3>
+            <div class="offers__item-wrapper">
+              <p class="offers__item-text">Продолжительность 3 часа </p>
+              <p class="offers__item-text">Игровая развлекательная программа с 1 Персонажем</p>
+              <p class="offers__item-text offers__item-text--list-title">2 шоу-программы на выбор:</p>
+              <ul class="offers__item-list">
+                <li>Крио-шоу/ научное шоу/ поролон-шоу (90 кубиков) </li>
+                <li>Шоу гигантских мыльных пузырей/ Пиратский квест</li>
+              </ul>
+              <p class="offers__price-old"><span class="offers__text-hidden">Старая цена </span>Итого 8400р.</p>
+              <p class="offers__price-text">спеццена</p>
+              <p class="offers__price">7400 р.</p>
               <p class="offers__price-benefit">выгода 1000 р.</p>
-              <a href="#" class="btn btn--offers">Заказать</a>
+              <a href="#" class="btn btn--offers js-order">Заказать</a>
+            </div>
           </li>
           <li class="offers__item">
-            <h3 class="offers__item-title">Пакет «Все включено»</h3>
-            <p class="offers__item-text">Продолжительность 4 часа </p>
-            <p class="offers__item-text">Игровая развлекательная программа с 2 Персонажами</p>
-            <p class="offers__item-text">2 шоу-программы на выбор:</p>
-            <ul class="offers__item-list">
-              <li>Крио-шоу/ научное шоу/ поролон-шоу (90 кубиков) </li>
-              <li>Шоу гигантских мыльных пузырей/ Пиратский квест организованная дискотека</li>
-            </ul>
-            <p class="offers__item-text">Профессиональный аквагрим </p>
-            <p class="offers__item-text">15 фигурных гелиевых шаров </p>
-            <p class="offers__item-text">По желанию фото и видеосъемка (с изготовлением ролика)</p>
-            <p class="offers__price-old"><span class="offers__text-hidden">Старая цена </span>Итого 17800р.</p>
-            <p class="offers__price-text">спеццена</p>
-            <pclass="offers__price">15000 р.</p>
+            <h3 class="offers__item-title">Пакет</br><span>«Все включено»</span></h3>
+            <div class="offers__item-wrapper">
+              <p class="offers__item-text">Продолжительность 4 часа </p>
+              <p class="offers__item-text">Игровая развлекательная программа с 2 Персонажами</p>
+              <p class="offers__item-text offers__item-text--list-title">2 шоу-программы на выбор:</p>
+              <ul class="offers__item-list">
+                <li>Крио-шоу/ научное шоу/ поролон-шоу (90 кубиков) </li>
+                <li>Шоу гигантских мыльных пузырей/ Пиратский квест организованная дискотека</li>
+              </ul>
+              <p class="offers__item-text">Профессиональный аквагрим </p>
+              <p class="offers__item-text offers__item-text--without-elips">15 фигурных гелиевых шаров</br> По желанию фото и видеосъемка (с изготовлением ролика)</p>
+              <p class="offers__price-old"><span class="offers__text-hidden">Старая цена </span>Итого 17800р.</p>
+              <p class="offers__price-text">спеццена</p>
+              <p class="offers__price">15000 р.</p>
               <p class="offers__price-benefit">выгода 2800 р.</p>
-              <a href="#" class="btn btn--offers">Заказать</a>
+              <a href="#" class="btn btn--offers js-order">Заказать</a>
+            </div>
           </li>
         </ul>
       </div>
@@ -300,73 +332,155 @@
     <section class="our-partners">
       <div class="our-partners__inner">
         <h2 class="our-partners__title">Наши партнеры</h2>
+        <ul class="our-partners__list">
+          <li class="our-partners__item">
+            <img src="img/logo/briz.svg" width="200" alt="Логотип 'Бриз'">
+          </li>
+          <li class="our-partners__item">
+            <img src="img/logo/Koshki_Myshki.png" width="200"  alt="Логотип 'Кошки мышки'">
+          </li>
+          <li class="our-partners__item">
+            <img src="img/logo/38.png" width="200"  alt="Логотип '38 Попугаев'">
+          </li>
+          <li class="our-partners__item">
+            <img src="img/logo/pioner_logo.png" width="200" alt="Логотип 'Пионер'">
+          </li>
+          <li class="our-partners__item">
+            <img src="img/logo/safari-fitnes.svg" width="200" alt="Логотип 'Сафари фитнес'">
+          </li>
+          <li class="our-partners__item">
+            <img src="img/logo/safarikids.svg" width="200" alt="Логотип 'Сафари кидс'">
+          </li>
+          <li class="our-partners__item">
+            <img src="img/logo/yunost.svg" width="200" alt="Логотип 'Юность'">
+          </li>
+          <li class="our-partners__item">
+            <img src="img/logo/zabava.png" width="200" alt="Логотип 'Забава'">
+          </li>
+        </ul>
       </div>
     </section>
-    <section class="сertificates">
-      <h2 class="сertificates__title">Отзывы</h2>
+    <section id="сertificates" class="сertificates">
+      <h2 class="сertificates__title">Сертификаты</h2>
       <div class="сertificates__inner">
-        <button class="btn-reviews btn-reviews--left" type="button"></button>
-        <div class="сertificates__wrapper">
-          <ul class="сertificates__list">
-            <li class="сertificates__item ">
-
-            </li>
-          </ul>
-        </div>
-        <button class="btn-reviews btn-reviews--right" type="button"></button>
+        <ul class="сertificates__list">
+          <li class="сertificates__item ">
+            <img src="/img/serifikats/1.jpg" alt="Наши сертификаты" width="200" height="280">
+          </li>
+          <li class="сertificates__item ">
+            <img src="/img/serifikats/2.jpg" alt="Наши сертификаты" width="200" height="280">
+          </li>
+          <li class="сertificates__item ">
+            <img src="/img/serifikats/3.jpg" alt="Наши сертификаты" width="200" height="280">
+          </li>
+          <li class="сertificates__item ">
+            <img src="/img/serifikats/4.jpg" alt="Наши сертификаты" width="200" height="280">
+          </li>
+          <li class="сertificates__item ">
+            <img src="/img/serifikats/5.jpg" alt="Наши сертификаты" width="200" height="280">
+          </li>
+          <li class="сertificates__item ">
+            <img src="/img/serifikats/6.jpg" alt="Наши сертификаты" width="200" height="280">
+          </li>
+        </ul>
       </div>
     </section>
   </main>
 
   <footer class="main-footer">
-    <section class="footer-contact">
-      <a class="footer-contact__link"><img src="img/logo.png" width="274" height="77" alt="Логотип компании «Алые Паруса»"></a>
-      <p class="footer-contact__text">«Алые паруса» г. Барнаул, ул. Гридасова, 17 а</p>
-      <a class="footer-contact__phonenomber" href="tel:+79293992429">+7 929 399 24 29</a>
-      </p>
-    </section>
-    <nav class="footer-nav">
-      <p class="footer-nav__text-hidden">Главное меню сайта</p>
-      <ul class="footer-nav__list">
-        <li class="footer-nav__item">
-          <a href="#">Главная</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href="#">Наши шоу</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href="#">Отзывы</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href="#">Спец предложения</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href="#">Сертификаты</a>
-        </li>
-      </ul>
-    </nav>
-    <section class="social-btn social-btn--footer">
-      <p class="social-btn__text-hidden">Пишите нам</p>
-      <ul class="social-btn__list">
-        <li class="social-btn__item social-btn__item--ok">
-          <a href="#">Мы в одноклассниках</a>
-        </li>
-        <li class="social-btn__item social-btn__item--vk">
-          <a href="#">Мы в контакте</a>
-        </li>
-        <li class="social-btn__item social-btn__item--insta">
-          <a href="#">Мы в инстаграмм</a>
-        </li>
-        <li class="social-btn__item social-btn__item--fb">
-          <a href="#">Мы в фейсбук</a>
-        </li>
-      </ul>
-    </section>
+    <div class="main-footer__wrapper">
+      <div class="main-footer__inner">
+        <section class="footer-contact">
+          <a href="#main-page" class="footer-contact__link"><img src="img/logo.png" width="274" height="77" alt="Логотип компании «Алые Паруса»"></a>
+          <p class="footer-contact__text">«Алые паруса»</br> г. Барнаул, ул. Гридасова, 17 а</p>
+          <a class="footer-contact__phonenomber" href="tel:+79293992429">+7 929 399 24 29</a>
 
+        </section>
+        <nav class="footer-nav">
+          <p class="footer-nav__hidden">Главное меню сайта</p>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="#main-page">Главная</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#show">Наши шоу</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#reviews">Отзывы</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#offers">Спец предложения</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#сertificates">Сертификаты</a>
+            </li>
+          </ul>
+          <section class="social-btn social-btn--footer">
+            <p class="social-btn__text-hidden">Пишите нам</p>
+            <ul class="social-btn__list">
+              <!-- <li class="social-btn__item social-btn__item--ok">
+                <a href="#" target="_blank">Мы в одноклассниках</a>
+              </li> -->
+              <!-- <li class="social-btn__item social-btn__item--vk">
+                <a href="#" target="_blank">Мы в контакте</a>
+              </li> -->
+              <li class="social-btn__item social-btn__item--insta">
+                <a href="https://www.instagram.com/prazdnik.barnaul/" target="_blank">Мы в инстаграмм</a>
+              </li>
+              <!-- <li class="social-btn__item social-btn__item--fb">
+                <a href="#" target="_blank">Мы в фейсбук</a>
+              </li> -->
+            </ul>
+          </section>
+        </nav>
+      </div>
+      <div class="main-footer__copyright">Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a> is licensed by CC BY 3.0</div>
     </div>
-    <div>Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a> is licensed by CC BY 3.0</div>
-
   </footer>
+  <div class="modal-content modal-content--order">
+    <button class="modal-content__btn-close btn-close" type="button" title="Закрыть">Закрыть</button>
+    <h2 class="modal-content__title">Заказать</h2>
+    <p class="modal-content__text">Для заказа шоу-программы заполните форму заказа</p>
+    <form id="formx" class="order-form" action="javascript:void(null);" method="post" onsubmit="callorder()">
+      <input class="order-form__input" type="text" name="user" placeholder="Ваше имя" required>
+      <input class="order-form__input" type="tel" name="phone" placeholder="Ваш телефон" required>
+      <label class="order-form__checkbox" required>
+          <input type="checkbox" name="personal-data" required>
+          Я соглашаюсь на передачу персональных данных согласно пользовательскому соглашению и политике конфиденциальности данного сайта
+        </label>
+      <input type="hidden" name="formname" value="Заказ шоу">
+      <button class="btn order-form__btn" type="submit">Заказать</button>
+    </form>
+  </div>
+  <div class="modal-content modal-content--consultation">
+    <button class="modal-content__btn-close btn-close" type="button" title="Закрыть">Закрыть</button>
+    <h2 class="modal-content__title">Заказать консультацию</h2>
+    <p class="modal-content__text">Оставьте заявку и мы свяжемся с вами в ближайшее время, чтобы ответить на ваши вопросы</p>
+    <form id="formy" class="order-form order-form--consultation" action="javascript:void(null);" method="post" onsubmit="callconcult()">
+      <input class="order-form__input" type="text" name="user" placeholder="Ваше имя" required>
+      <input class="order-form__input" type="tel" name="phone" placeholder="Ваш телефон" required>
+      <label class="order-form__checkbox">
+            <input type="checkbox" name="personal-data" required>
+            Я соглашаюсь на передачу персональных данных согласно пользовательскому соглашению и политике конфиденциальности данного сайта
+          </label>
+      <input type="hidden" name="formname" value="Консультация">
+      <button class="btn order-form__btn" type="submit">Заказать</button>
+    </form>
+  </div>
+  <div class="modal-content modal-content--thanks">
+    <button class="modal-content__btn-close btn-close" type="button" title="Закрыть">Закрыть</button>
+    <h2 class="modal-content__title">Спасибо!</h2>
+    <p class="modal-content__text">Ваше сообщение отправлено, наши менеджеры свяжутья с вами в ближайшее время</p>
+
+  </div>
+  <script type="text/javascript" charset="utf-8" src="js/popup.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/ajax.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <!-- подключаем jquery -->
+  <!-- <script type="text/javascript" charset="utf-8" src="js/jquery.tubular.1.0.js"></script> -->
+  <!--  подключаем плагин -->
+  <!-- <script type="text/javascript" charset="utf-8" src="js/index.js"></script> -->
+  <!-- добавляем id видеофайла с youtube -->
 </body>
 
 </html>
