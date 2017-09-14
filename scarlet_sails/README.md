@@ -1,1 +1,0 @@
-# gonzik82.github.io
