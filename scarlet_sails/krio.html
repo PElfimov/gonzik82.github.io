@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+
+
 </head>
 
 <body>
@@ -39,12 +42,36 @@
       </article>
       <a class="btn show-description__btn js-order" href="#">Закзать шоу</a>
       <ul class="show-description__gallery">
-        <li class="show-description__gallery-item"><img src="img/krio1.jpg" alt="фотография крио-шоу" width="171" height="123"></li>
-        <li class="show-description__gallery-item"><img src="img/krio2.jpg" alt="фотография крио-шоу" width="171" height="123"></li>
-        <li class="show-description__gallery-item"><img src="img/krio3.jpg" alt="фотография крио-шоу" width="171" height="123"></li>
-        <li class="show-description__gallery-item"><img src="img/krio4.jpg" alt="фотография крио-шоу" width="171" height="123"></li>
-        <li class="show-description__gallery-item"><img src="img/krio5.jpg" alt="фотография крио-шоу" width="171" height="123"></li>
-        <li class="show-description__gallery-item"><img src="img/krio6.jpg" alt="фотография крио-шоу" width="171" height="123"></li>
+        <li class="show-description__gallery-item">
+          <a href="img/krio1.jpg" class="fancybox" rel="gallery" title="Sample title">
+            <img src="img/krio1.jpg" alt="фотография крио-шоу" width="171" height="123">
+          </a>
+        </li>
+        <li class="show-description__gallery-item">
+          <a href="img/krio2.jpg" class="fancybox" rel="gallery" title="Sample title">
+            <img src="img/krio2.jpg" alt="фотография крио-шоу" width="171" height="123">
+          </a>
+        </li>
+        <li class="show-description__gallery-item">
+          <a href="img/krio3.jpg" class="fancybox" rel="gallery" title="Sample title">
+            <img src="img/krio3.jpg" alt="фотография крио-шоу" width="171" height="123">
+          </a>
+        </li>
+        <li class="show-description__gallery-item">
+          <a href="img/krio4.jpg" class="fancybox" rel="gallery" title="Sample title">
+            <img src="img/krio4.jpg" alt="фотография крио-шоу" width="171" height="123">
+          </a>
+        </li>
+        <li class="show-description__gallery-item">
+          <a href="img/krio5.jpg" class="fancybox" rel="gallery" title="Sample title">
+            <img src="img/krio5.jpg" alt="фотография крио-шоу" width="171" height="123">
+          </a>
+        </li>
+        <li class="show-description__gallery-item">
+          <a href="img/krio6.jpg" class="fancybox" rel="gallery" title="Sample title">
+            <img src="img/krio6.jpg" alt="фотография крио-шоу" width="171" height="123">
+          </a>
+        </li>
       </ul>
       <div class="show-description__video">
         <iframe width="465" height="281" src="https://www.youtube.com/embed/LWV5eVx4ymg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -52,20 +79,36 @@
     </div>
   </main>
   <div class="modal-content modal-content--order">
-      <button class="modal-content__btn-close btn-close" type="button" title="Закрыть">Закрыть</button>
-      <h2 class="modal-content__title">Заказать</h2>
-      <p class="modal-content__text">Для заказа шоу-программы заполните форму заказа</p>
-      <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
-        <input class="order-form__input" type="text" name="user" placeholder="Ваше имя">
-        <input class="order-form__input" type="tel"  name="phone" placeholder="Ваш телефон">
-        <label class="order-form__checkbox">
-          <input type="checkbox" name="personal-data">
+    <button class="modal-content__btn-close btn-close" type="button" title="Закрыть">Закрыть</button>
+    <h2 class="modal-content__title">Заказать</h2>
+    <p class="modal-content__text">Для заказа шоу-программы заполните форму заказа</p>
+    <form id="formx" class="order-form" action="javascript:void(null);" method="post" onsubmit="callorder()">
+      <input class="order-form__input" type="text" name="user" placeholder="Ваше имя" required>
+      <input class="order-form__input" type="tel" name="phone" placeholder="Ваш телефон" required>
+      <label class="order-form__checkbox" required>
+          <input type="checkbox" name="personal-data" required>
           Я соглашаюсь на передачу персональных данных согласно пользовательскому соглашению и политике конфиденциальности данного сайта
         </label>
-        <button class="btn order-form__btn" type="submit">Заказать</button>
-      </form>
-    </div>
-    <script type="text/javascript" charset="utf-8" src="js/popup.js"></script>
+      <input type="hidden" name="formname" value="Заказ шоу Крио Шоу">
+      <button class="btn order-form__btn" type="submit">Заказать</button>
+    </form>
+  </div>
+  <div class="modal-content modal-content--thanks">
+    <button class="modal-content__btn-close btn-close" type="button" title="Закрыть">Закрыть</button>
+    <h2 class="modal-content__title">Спасибо!</h2>
+    <p class="modal-content__text">Ваше сообщение отправлено, наши менеджеры свяжутья с вами в ближайшее время</p>
+
+  </div>
+  <script type="text/javascript" charset="utf-8" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/fancybox/jquery.fancybox.pack.js"></script>
+  <script>
+      $(document).ready(function() {
+          $('.fancybox').fancybox();
+      });
+  </script>
+  <script type="text/javascript" charset="utf-8" src="js/popupdescription.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/ajax.js"></script>
+
 </body>
 
 </html>

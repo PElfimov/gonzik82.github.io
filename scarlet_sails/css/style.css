@@ -947,7 +947,7 @@ img {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  margin: 5px;
+  margin: 15px;
 }
 .our-partners__item img {
   width: auto;
@@ -1233,6 +1233,7 @@ img {
   position: absolute;
   right: 0;
   top: 0;
+  background-image: url("../img/icons/close3-blue.svg");
 }
 .show-description__title {
   color: #FF0000;
