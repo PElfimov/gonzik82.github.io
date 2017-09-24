@@ -174,6 +174,7 @@ img {
 }
 .social-btn__item--ok a {
   background-image: url("../img/icons/ok.svg");
+  background-size: 12px 85px;
 }
 .social-btn__item--vk a {
   background-size: 18px 25px;
@@ -765,6 +766,7 @@ img {
   font-size: 15px;
   line-height: 16px;
   margin: 10px;
+  max-width: 196px;
   min-width: 196px;
 }
 .reviews__item a {
@@ -887,14 +889,8 @@ img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   padding: 15px;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: center;
-      justify-content: center;
   text-align: center;
 }
 .offers__item-title span {
@@ -1084,7 +1080,7 @@ img {
 }
 .сertificates__item {
   display: block;
-  width: 200px;
+  min-width: 200px;
   list-style-type: none;
   margin: 5px 10px;
   border: solid 3px #06466F;
@@ -1306,6 +1302,9 @@ img {
   line-height: 12px;
   margin-bottom: 15px;
 }
+.order-form__checkbox a {
+  color: #FF0000;
+}
 .order-form__btn {
   margin: 0 auto;
   margin-bottom: 30px;
@@ -1376,10 +1375,45 @@ img {
 .show-description__strong-text {
   font-size: 20px;
 }
+.show-description__strong-text--red {
+  color: #FF0000;
+}
 .show-description__text {
   line-height: 22px;
   margin: 10px 0 0;
   font-size: 18px;
+}
+.show-description__text--red {
+  color: #FF0000;
+  font-weight: 700;
+}
+.show-description__old-price {
+  margin-bottom: 10px;
+  font-family: "Tahoma";
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  position: relative;
+}
+.show-description__old-price::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  width: 127px;
+  height: 1px;
+  background-color: red;
+  transform: rotate(7deg) translate(-50%, -50%);
+}
+.show-description__old-price::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  width: 127px;
+  height: 1px;
+  background-color: red;
+  transform: rotate(-7deg) translate(-50%, -50%);
 }
 .show-description__text--characteristics {
   padding: 0;
@@ -1588,4 +1622,16 @@ img {
   100% {
     transform: var(--moveStop);
   }
+}
+.documents {
+  width: 830px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 50px;
+}
+.documents__btn-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url("../img/icons/close3-blue.svg");
 }
