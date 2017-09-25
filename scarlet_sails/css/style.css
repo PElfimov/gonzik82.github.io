@@ -1303,6 +1303,9 @@ img {
   margin-bottom: 15px;
 }
 .order-form__checkbox a {
+  color: #FFFFFF;
+}
+.order-form__checkbox a:hover {
   color: #FF0000;
 }
 .order-form__btn {
@@ -1435,6 +1438,9 @@ img {
   margin: 3px 0 15px;
   padding-left: 12px;
 }
+.show-description__list--marg0 {
+  margin: 0;
+}
 .show-description__item {
   position: relative;
   line-height: 21px;
@@ -1562,6 +1568,9 @@ img {
 .gallery__item--animat img {
   width: 175px;
   height: auto;
+}
+.gallery__btn {
+  transform: rotate(90deg);
 }
 .jsmove--left {
   --moveStart: translateX(600px) translateY(0);
