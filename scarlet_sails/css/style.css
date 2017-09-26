@@ -103,6 +103,7 @@ img {
   font-weight: 700;
 }
 .header-contact__phonenomber {
+  display: block;
   padding-left: 38px;
   margin-bottom: 6px;
   position: relative;
@@ -394,6 +395,7 @@ img {
   margin-top: 30px;
 }
 .why-us-page__item {
+  display: block;
   list-style: none;
   font-family: 'Tahoma';
   font-weight: 700;
@@ -493,6 +495,7 @@ img {
   text-shadow: #06466F 2px 0px 2px, #06466F 0px 2px 2px, #06466F 0px -2px 2px, #06466F -2px 0px 2px;
 }
 .about-us__item {
+  display: block;
   list-style: none;
   padding-top: 50px;
   margin-bottom: 20px;
@@ -847,6 +850,7 @@ img {
   margin-top: 56px;
 }
 .offers__item {
+  display: block;
   width: 230px;
   background-color: #BDDCEC;
   list-style: none;
