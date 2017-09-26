@@ -1558,6 +1558,7 @@ img {
       flex-direction: column;
   -ms-flex-pack: justify;
       justify-content: space-between;
+  min-height: 160px;
   max-height: 354px;
   overflow: hidden;
 }
